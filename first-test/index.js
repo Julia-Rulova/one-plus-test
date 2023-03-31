@@ -9,8 +9,9 @@ function getData() {
     .then(() => {
         for (let i = 0; i < dataArr.length; i++) {
             let tr = document.createElement('tr');
+            tr.classList.add('tr')
             tr.innerHTML = `
-                        <tr class="tr">
+                        <tr>
                             <td>${dataArr[i].id}</td>
                             <td>${dataArr[i].symbol}</td>
                             <td>${dataArr[i].name}</td>
