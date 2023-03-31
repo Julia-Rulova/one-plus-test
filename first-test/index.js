@@ -10,7 +10,7 @@ function getData() {
         for (let i = 0; i < dataArr.length; i++) {
             let tr = document.createElement('tr');
             tr.innerHTML = `
-                        <tr  class="tr">
+                        <tr class="tr">
                             <td>${dataArr[i].id}</td>
                             <td>${dataArr[i].symbol}</td>
                             <td>${dataArr[i].name}</td>
