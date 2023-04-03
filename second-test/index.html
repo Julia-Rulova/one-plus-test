@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>One Plus</title>
+</head>
+<body class="body d-flex flex-column align-items-center justify-content-center">
+    <header class="header d-flex flex-row justify-content-between align-items-center w-100">
+        <div class="d-flex flex-row justify-content-start align-items-center input-container">
+            <img src="./images/logo.svg" class="img-fluid me-4" alt="логотип.">
+            <div class="input-group position-relative search-input">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FDD446" class="bi bi-search search-icon" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                <input type="search" class="form-control rounded-pill ps-5 border-secondary w-100" placeholder="Поиск..." aria-describedby="inputGroup-sizing-default">
+            </div>
+        </div>
+
+        <div class="d-flex flex-row align-items-center profile">
+            <img src="./images/profile.png" class="img-fluid rounded-circle" alt="аватарка.">
+            <div class="arrow-span"></div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="d-flex flex-row justify-content-between align-items-center">
+            <div class="main__filter main__filter_one btn border-secondary d-flex flex-row justify-content-between align-items-center">
+                <p class="main__filter-text fw-medium">Фильтры</p>
+                <div class="arrow-span"></div>
+            </div>
+            <div class="input-group position-relative search-input-filter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FDD446" class="bi bi-search search-icon" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                <input type="search" class="form-control rounded-pill ps-5 border-secondary w-100" placeholder="Поиск..." aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="main__filter main__filter_two btn border-secondary d-flex flex-row justify-content-between align-items-center">
+                <p class="main__filter-text fw-medium">По умолчанию</p>
+                <img class="img-fluid" src="./images/arrow-down.svg" alt="стрелка вниз."></img>
+            </div>
+        </section>
+
+        <section class="container cards__container w-100">
+            <div class="row row-cols-4 cards">
+                <div class="col card rounded-5 card__item">
+                    <img src="./images/bigCardPhoto.png" class="card-img-top card__photo" alt="фото.">
+                    <div class="card-body p-0">
+                      <h5 class="card-title card__title">Без слов</h5>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <img src="./images/smallCardPhoto.png" class="me-2">
+                        <div class="d-flex flex-column">
+                            <p class="m-0 fw-medium">Настя Ивлеева Вячеславовна</p>
+                            <div class="d-flex flex-row justify-content-start align-items-center">
+                                <p class="fw-medium m-0 card__check-text">проверено</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9900" class="bi bi-patch-check-fill ms-2" viewBox="0 0 16 16">
+                                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center card__rare">
+                        <p class="m-0 fw-medium">Редкость:</p>
+                        <p class="card__rare-type m-0">уникальная</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="m-0 fw-medium">Цена:</p>
+                        <p class="rounded-3 card__price m-0">от 500 ₽</p>
+                      </div>
+                      <button class="btn w-100 rounded-4 card__btn fw-medium fs-5">Купить</button>
+                    </div>
+                </div>
+
+                <div class="col card rounded-5 card__item">
+                    <img src="./images/bigCardPhoto.png" class="card-img-top card__photo" alt="фото.">
+                    <div class="card-body p-0">
+                      <h5 class="card-title card__title">Без слов</h5>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <img src="./images/smallCardPhoto.png" class="me-2">
+                        <div class="d-flex flex-column">
+                            <p class="m-0 fw-medium">Настя Ивлеева Вячеславовна</p>
+                            <div class="d-flex flex-row justify-content-start align-items-center">
+                                <p class="fw-medium m-0 card__check-text">проверено</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9900" class="bi bi-patch-check-fill ms-2" viewBox="0 0 16 16">
+                                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center card__rare">
+                        <p class="m-0 fw-medium">Редкость:</p>
+                        <p class="card__rare-type m-0">уникальная</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="m-0 fw-medium">Цена:</p>
+                        <p class="rounded-3 card__price m-0">от 500 ₽</p>
+                      </div>
+                      <button class="btn w-100 rounded-4 card__btn fw-medium fs-5">Купить</button>
+                    </div>
+                </div>
+
+                <div class="col card rounded-5 card__item">
+                    <img src="./images/bigCardPhoto.png" class="card-img-top card__photo" alt="фото.">
+                    <div class="card-body p-0">
+                      <h5 class="card-title card__title">Без слов</h5>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <img src="./images/smallCardPhoto.png" class="me-2">
+                        <div class="d-flex flex-column">
+                            <p class="m-0 fw-medium">Настя Ивлеева Вячеславовна</p>
+                            <div class="d-flex flex-row justify-content-start align-items-center">
+                                <p class="fw-medium m-0 card__check-text">проверено</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9900" class="bi bi-patch-check-fill ms-2" viewBox="0 0 16 16">
+                                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center card__rare">
+                        <p class="m-0 fw-medium">Редкость:</p>
+                        <p class="card__rare-type m-0">уникальная</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="m-0 fw-medium">Цена:</p>
+                        <p class="rounded-3 card__price m-0">от 500 ₽</p>
+                      </div>
+                      <button class="btn w-100 rounded-4 card__btn fw-medium fs-5">Купить</button>
+                    </div>
+                </div>
+
+                <div class="col card rounded-5 card__item">
+                    <img src="./images/bigCardPhoto.png" class="card-img-top card__photo" alt="фото.">
+                    <div class="card-body p-0">
+                      <h5 class="card-title card__title">Без слов</h5>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <img src="./images/smallCardPhoto.png" class="me-2">
+                        <div class="d-flex flex-column">
+                            <p class="m-0 fw-medium">Настя Ивлеева Вячеславовна</p>
+                            <div class="d-flex flex-row justify-content-start align-items-center">
+                                <p class="fw-medium m-0 card__check-text">проверено</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9900" class="bi bi-patch-check-fill ms-2" viewBox="0 0 16 16">
+                                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center card__rare">
+                        <p class="m-0 fw-medium">Редкость:</p>
+                        <p class="card__rare-type m-0">уникальная</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="m-0 fw-medium">Цена:</p>
+                        <p class="rounded-3 card__price m-0">от 500 ₽</p>
+                      </div>
+                      <button class="btn w-100 rounded-4 card__btn fw-medium fs-5">Купить</button>
+                    </div>
+                </div>
+
+                <div class="col card rounded-5 card__item">
+                    <img src="./images/bigCardPhoto.png" class="card-img-top card__photo" alt="фото.">
+                    <div class="card-body p-0">
+                      <h5 class="card-title card__title">Без слов</h5>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <img src="./images/smallCardPhoto.png" class="me-2">
+                        <div class="d-flex flex-column">
+                            <p class="m-0 fw-medium">Настя Ивлеева Вячеславовна</p>
+                            <div class="d-flex flex-row justify-content-start align-items-center">
+                                <p class="fw-medium m-0 card__check-text">проверено</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9900" class="bi bi-patch-check-fill ms-2" viewBox="0 0 16 16">
+                                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center card__rare">
+                        <p class="m-0 fw-medium">Редкость:</p>
+                        <p class="card__rare-type m-0">уникальная</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="m-0 fw-medium">Цена:</p>
+                        <p class="rounded-3 card__price m-0">от 500 ₽</p>
+                      </div>
+                      <button class="btn w-100 rounded-4 card__btn fw-medium fs-5">Купить</button>
+                    </div>
+                </div>
+
+                <div class="col card rounded-5 card__item">
+                    <img src="./images/bigCardPhoto.png" class="card-img-top card__photo" alt="фото.">
+                    <div class="card-body p-0">
+                      <h5 class="card-title card__title">Без слов</h5>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <img src="./images/smallCardPhoto.png" class="me-2">
+                        <div class="d-flex flex-column">
+                            <p class="m-0 fw-medium">Настя Ивлеева Вячеславовна</p>
+                            <div class="d-flex flex-row justify-content-start align-items-center">
+                                <p class="fw-medium m-0 card__check-text">проверено</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9900" class="bi bi-patch-check-fill ms-2" viewBox="0 0 16 16">
+                                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center card__rare">
+                        <p class="m-0 fw-medium">Редкость:</p>
+                        <p class="card__rare-type m-0">уникальная</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="m-0 fw-medium">Цена:</p>
+                        <p class="rounded-3 card__price m-0">от 500 ₽</p>
+                      </div>
+                      <button class="btn w-100 rounded-4 card__btn fw-medium fs-5">Купить</button>
+                    </div>
+                </div>
+
+                <div class="col card rounded-5 card__item">
+                    <img src="./images/bigCardPhoto.png" class="card-img-top card__photo" alt="фото.">
+                    <div class="card-body p-0">
+                      <h5 class="card-title card__title">Без слов</h5>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <img src="./images/smallCardPhoto.png" class="me-2">
+                        <div class="d-flex flex-column">
+                            <p class="m-0 fw-medium">Настя Ивлеева Вячеславовна</p>
+                            <div class="d-flex flex-row justify-content-start align-items-center">
+                                <p class="fw-medium m-0 card__check-text">проверено</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF9900" class="bi bi-patch-check-fill ms-2" viewBox="0 0 16 16">
+                                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center card__rare">
+                        <p class="m-0 fw-medium">Редкость:</p>
+                        <p class="card__rare-type m-0">уникальная</p>
+                      </div>
+                      <div class="d-flex flex-row justify-content-between align-items-center">
+                        <p class="m-0 fw-medium">Цена:</p>
+                        <p class="rounded-3 card__price m-0">от 500 ₽</p>
+                      </div>
+                      <button class="btn w-100 rounded-4 card__btn fw-medium fs-5">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="d-flex flex-row justify-content-between pagination fw-medium">
+            <p class="pagination__item"><<</p>
+            <p class="pagination__item pagination__current">1</p>
+            <p class="pagination__item">2</p>
+            <p class="pagination__item">3</p>
+            <p class="pagination__item">4</p>
+            <p class="pagination__item">...</p>
+            <p class="pagination__item">>></p>
+        </div>
+    </main>
+
+    <footer class="footer w-100">
+        <div class="d-flex flex-row justify-content-between">
+            <div class="d-flex flex-column">
+                <img src="./images/logo.svg" alt="логотип." class="footer__logo">
+                <img src="./images/footer-star.svg" alt="звезда." class="footer__logo-star">
+                <p class="footer__item footer__item_first">Россия, г. Москва, 119002</p>
+                <p class="footer__item">ул. Арбат 51/1/8А</p>
+                <p class="footer__item">e-mail: info@lionmax.ru</p>
+                <div class="d-flex flex-row footer__icons">
+                    <img src="./images/twitter.svg" alt="твиттер." class="me-4">
+                    <img src="./images/vk.svg" alt="вконтакте.">
+                </div>
+            </div>
+            <div class="d-flex flex-row">
+                <div>
+                    <h5 class="fw-bold footer__title">NFT</h5>
+                    <p class="footer__item">Что такое NFT</p>
+                    <p class="footer__item">Создайте NFT с нами</p>
+                </div>
+                <div class="footer__company">
+                    <h5 class="fw-bold footer__title">Компания</h5>
+                    <p class="footer__item">О нас</p>
+                    <p class="footer__item">Отправить запрос</p>
+                </div>
+                <div>
+                    <h5 class="fw-bold footer__title">Другое</h5>
+                    <p class="footer__item">Условия использования</p>
+                    <p class="footer__item">Политика конфиденциальности</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__line"></div>
+        <img src="./images/footer-star.svg" alt="звезда." class="footer__big-star">
+        <p class="footer__author m-0">@ tnft.ru Company, Inc</p>
+    </footer>
+
+    <div class="blur-circle"></div>
+    <div class="blur-circle-bot"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
